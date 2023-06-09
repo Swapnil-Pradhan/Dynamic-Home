@@ -93,7 +93,10 @@ document.addEventListener('contextmenu', e => {
      e.preventDefault();
  });
 
-mob.href = (/Mobi|Android|iPhone|iPad|Windows Phone/.test(navigator.userAgent)) ? "Mob.css" : "NotMob.css";
+const u=(/Mobi|Android|iPhone|iPad|Windows Phone/.test(navigator.userAgent));
+var vl;
+mob.href = u ? "Mob.css" : "NotMob.css";
+u ? vl=0 : vl=69;
 
 const formulaElem = document.getElementById("sce");
 function doBalance() {
