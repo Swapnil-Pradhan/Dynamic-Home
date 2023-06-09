@@ -11,6 +11,7 @@
 width: 90vw;
 position: fixed;
 translate: 0 -5vh;
+    backdrop-filter: blur(0);
 }
 
 #sw:hover{
