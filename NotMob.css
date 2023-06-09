@@ -1,0 +1,32 @@
+#sw:hover {
+    scale: 1.05;
+}
+
+button:hover {
+    scale: .9;
+    letter-spacing: .2ch;
+    background: rgb(53, 38, 19) radial-gradient(circle, transparent 1%, rgba(255, 255, 255, .2) 1%) center/15000%;
+}
+
+#analog:hover {
+    scale: 1.2;
+}
+
+#apps:hover {
+    scale: 1.1;
+}
+
+#apps>a:hover {
+    background-size: 435%;
+    border-radius: 40px;
+    scale: .9;
+    font-weight: bold;
+    letter-spacing: .2ch;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+#btns>input:hover {
+    scale: 1.2;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    background: #ff8279;
+}

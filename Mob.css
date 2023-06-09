@@ -1,0 +1,56 @@
+@media screen and (max-width: 767px) {
+#clock{
+    position: fixed;
+ top: 5%;
+ z-index: 2;
+ scale: .8;
+}
+
+
+
+#sw{
+width: 90vw;
+position: fixed;
+translate: 0 -5vh;
+}
+
+#sw:hover{
+    scale: 1;
+}
+
+#apps{
+    position: fixed;
+    bottom: 5%;
+    width: 97vw;
+    left: 50%;
+transform: translateX(-50%);
+}
+
+#apps>a:active{
+    background-size: 435%;
+    border-radius: 40px;
+    scale: .9;
+    font-weight: bold;
+    letter-spacing: .2ch;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+button:active{
+    scale: .9;
+    letter-spacing: .2ch;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a:active{
+    background-size: 435%;
+    border-radius: 40px;
+    scale: .9;
+    font-weight: bold;
+    letter-spacing: .2ch;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+canvas{
+    display: none;
+}
+}

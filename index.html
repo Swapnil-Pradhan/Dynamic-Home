@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="Home.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Home</title>
+    <link rel="stylesheet" id="mob">
+</head>
+
+<body id="particles-js">
+    <div id="clock">
+        <span id="analog">
+            <center id="t">12</center>
+            <div id="hr" class="hand"></div>
+            <div id="min" class="hand"></div>
+            <div id="sec" class="hand"></div>
+            <div id="center"></div>
+            <span id="s">9</span>
+            <span id="th">3</span>
+            <span id="n">6</span>
+        </span>
+        <i id="digi"></i>
+        <span id="wish"></span>
+    </div>
+
+    <center id="sw">
+        <center id="swoogle">SWOOGLE</center>
+        <form autocomplete="on" onsubmit="return false" id="srch">
+            <input type="search" placeholder="Swoogle search..." id="q" required>
+        </form>
+        <center>
+            <button onclick="mic()"><sub class="icon">mic</sub> Mic</button>
+            <button onclick="paste()"><sub class="icon">content_paste</sub> Paste</button>
+        </center>
+    </center>
+
+    <div id="apps">
+        <a href="https://chat.openai.com/" target="_blank"><img src="ChatGPT.svg" alt="ChatGPT"> ChadGPT</a>
+        <a href="https://www.youtube.com/" target="_blank"><img src="YouTube.svg" alt="YouTube"> YouTube</a>
+        <a href="https://bard.google.com/" target="_blank"><img src="Bard.svg" alt="Bard"> Bard</a>
+        <a href="https://codepen.io/" target="_blank"><img src="Codepen.svg" alt="Codepen"> Codepen</a>
+        <a href="https://github.com/" target="_blank"><img src="GitHub.svg" alt="GitHub"> GitHub</a>
+        <a href="https://www.msn.com/en-in/weather/maps/precipitation/in-Kolkata,West-Bengal" target="_blank"><img
+                src="Weather.svg" alt="MSN"> Weather</a>
+        <a href="https://www.bing.com/create" target="_blank"><img src="Bing.svg" alt="Bing Image Creator"> Bing Image
+            Creator</a>
+        <a href="https://pw.live/" target="_blank"><img src="Physics Wallah.svg" alt="Physics Wallah"> Physics
+            Wallah</a>
+        <a href="https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx" target="_blank"><img src="Bing AI.svg"
+                alt="Bing AI"> Bing AI</a>
+    </div>
+
+    <form id="calc" autocomplete="on" onsubmit="return false" onclick="c.focus()">
+        <input placeholder="0" required id="c">
+        <div id="key">
+            <span onclick="cal(this.innerHTML)">0</span>
+            <span onclick="cal(this.innerHTML)" id="o">.</span>
+            <span onclick="back()" class="icon" style="background: orange;">backspace</span>
+            <input type="reset" value="C" style="background: orangered;">
+            <span onclick="cal(this.innerHTML)">1</span>
+            <span onclick="cal(this.innerHTML)">2</span>
+            <span onclick="cal(this.innerHTML)">3</span>
+            <span onclick="cal(this.innerHTML)" id="o">+</span>
+            <span onclick="cal(this.innerHTML)">4</span>
+            <span onclick="cal(this.innerHTML)">5</span>
+            <span onclick="cal(this.innerHTML)">6</span>
+            <span onclick="cal(this.innerHTML)" id="o">-</span>
+            <span onclick="cal(this.innerHTML)">7</span>
+            <span onclick="cal(this.innerHTML)">8</span>
+            <span onclick="cal(this.innerHTML)">9</span>
+            <span onclick="cal(this.innerHTML)" id="o">*</span>
+            <span onclick="cal(this.innerHTML)" id="o">(</span>
+            <span onclick="cal(this.innerHTML)" id="o">)</span>
+            <span onclick="cal(this.innerHTML)" id="o">/</span>
+            <input type="submit" value="=" style="background: #dcb8ff;">
+        </div>
+    </form>
+
+    <form id="chem" autocomplete="on" onsubmit="return false">
+        <h1 style="margin-top: 0;">
+            <center>Balance Chem Eq<sup>n</sup></center>
+        </h1>
+        <input placeholder="Skeletal Eq^n" id="sce" required>
+        <div id="btns" style="display: grid; grid-template-columns: 1fr 1fr;">
+            <input type="button" value="Random"
+                onclick="al.style.height = '7ch'; al.style.padding = '2ch'; chem.style.height = '40vh'; doRandom()">
+            <input type="submit" value="Balance">
+        </div>
+        <div id="al">
+            <div id="rslt"></div>
+            <div id="msg"></div>
+            <div id="code"></div>
+        </div>
+    </form>
+    <div id="grad"></div>
+    <script src="Home.js"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+   
+</body>
+
+</html>
