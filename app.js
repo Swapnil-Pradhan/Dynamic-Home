@@ -1,9 +1,9 @@
-particlesJS('particles-js',
+particlesJS('body',
 
   {
     "particles": {
       "number": {
-        "value": 69,
+        "value": vl,
         "density": {
           "enable": true,
           "value_area": 800
